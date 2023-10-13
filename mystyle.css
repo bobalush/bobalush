@@ -174,59 +174,71 @@ hr {
 
 /* STYLING FOR CONTACT US PAGE */
 
+
+.contact-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 50px;
+}
+
+
+
 form {
-    display: flex;
-    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 }
 
-.form-container {
-    width: 50%; /* Form will take up half of the screen width */
-    margin: 0 auto; /* Center the form */
+legend {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-.firstName, .lastName, .email, .languages, .comments {
-    margin-bottom: 1rem;
+.container label, .container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea, 
+select, 
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #aaa;
 }
 
 .row {
     display: flex;
-    justify-content: space-between; /* Space out the children equally */
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .column {
-    flex: 1; /* Both columns will take equal width */
-    margin-right: 0.5rem;
-
-    /* We remove the margin from the last column to avoid extra spacing */
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.languages {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-input[type="radio"] {
-    margin-right: 0.5rem;
+    width: 48%; /* Reduced a bit to account for potential box-sizing issues */
 }
 
 button {
-    background-color: #007BFF; /* Change this to your preferred color */
-    color: #fff;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: #0056b3; /* Darker shade for hover state */
-    }
+    transition: background-color 0.2s ease;
 }
 
-.contact-title {
-    text-align: center;
+button:hover {
+    background-color: #0056b3;
 }
