@@ -170,3 +170,63 @@ hr {
     background-color: #76f16b;
     margin: 20px 0;
 }
+
+
+/* STYLING FOR CONTACT US PAGE */
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 50%; /* Form will take up half of the screen width */
+    margin: 0 auto; /* Center the form */
+}
+
+.firstName, .lastName, .email, .languages, .comments {
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Space out the children equally */
+}
+
+.column {
+    flex: 1; /* Both columns will take equal width */
+    margin-right: 0.5rem;
+
+    /* We remove the margin from the last column to avoid extra spacing */
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.languages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: #007BFF; /* Change this to your preferred color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3; /* Darker shade for hover state */
+    }
+}
+
+.contact-title {
+    text-align: center;
+}
