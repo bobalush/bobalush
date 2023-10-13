@@ -1,0 +1,45 @@
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4af166;
+    padding: 20px 0;
+}
+
+footer a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ec0c0c;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* center items vertically */
+    justify-content: space-between; /*put max space between the image and the navigation */
+    padding: 20px 50px;   /* Some padding around the header */
+    background-color: #ee7b7b;  /*Example background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    gap: 20px;    /* Creates space between navigation links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s; /* for a smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #007BFF; /* changes the color when the link is hovered over */
+}
